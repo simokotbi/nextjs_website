@@ -33,8 +33,8 @@ const GlobalStyles = createGlobalStyle`
   }
   body {
     font-family: ${props => props.theme.fonts.main};
-    font-size: 1.6rem;
-    background: ${props => props.theme.colors.background1};
+    font-size: 2.6rem;
+    background: ${props => props.theme.colors.colorgrey40};
     color: ${props => props.theme.colors.primary1};
     cursor: default;
 
@@ -43,6 +43,8 @@ const GlobalStyles = createGlobalStyle`
     font-family: ${props => props.theme.fonts.secondary};
   }
   a {
+    
+
     text-decoration: none;
   }
   li{
