@@ -4,7 +4,7 @@ import  Layout  from '../src/layout/Layout';
 function HomePage(){
   return (
     <Layout>
-      <p>hzllokfdfj</p>
+      <p>home page</p>
      </Layout>
   );
 }

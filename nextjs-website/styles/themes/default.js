@@ -1,0 +1,68 @@
+export default {
+    // Temp fonts
+    fonts: {
+        secondary: "inter, sans-serif",
+      main: "Roboto Mono', monospace"
+   
+    },
+    // Colors for layout
+    colors: {
+    
+           primary1:"#abb2aa",
+            color2: "#526c69",
+            color3: "#00513b",
+            colorgrey40: "#fafafa",
+            colorgrey80:"#e7e7e8",
+            colorgrey100: "#d0d0d1",
+            colorgrey400: "#89898c",
+            colorgrey600: "#5a5a5e",
+            colorgrey800:"#2b2b30",
+            colorbrandcold:"#d1bdbe",
+            colorbrandlavender: "#9084b6",
+            colorbrandcobalt: "#0046b5",
+            colorbrandorange:"#fd532f",
+            colorwhite:"#fff",
+            colorblack:"#000"
+    },
+    // Breakpoints for responsive design
+    breakpoints: {
+      sm: 'screen and (max-width: 640px)',
+      md: 'screen and (max-width: 768px)',
+      lg: 'screen and (max-width: 1024px)',
+      xl: 'screen and (max-width: 1280px)'
+    },
+  }
+  
+
+//   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.04);
+//     --border-radius-small: 4px;
+//     --border-radius-large: 10px;
+//     --color-primary-100: #afcfc2;
+//     --color-primary-200: #abb2aa;
+//     --color-primary-300: #526c69;
+//     --color-primary-400: #00513b;
+//     --color-grey-40: #fafafa;
+//     --color-grey-80: #e7e7e8;
+//     --color-grey-100: #d0d0d1;
+//     --color-grey-400: #89898c;
+//     --color-grey-600: #5a5a5e;
+//     --color-grey-800: #2b2b30;
+//     --color-brand-cold: #d1bdbe;
+//     --color-brand-lavender: #9084b6;
+//     --color-brand-cobalt: #0046b5;
+//     --color-brand-orange: #fd532f;
+//     --color-white: #fff;
+//     --color-black: #000;
+//     --font-family-primary: inter, sans-serif;
+//     --font-family-secondary: 'Roboto Mono', monospace;
+//     --font-weight-regular: 500;
+//     --font-weight-semibold: 600;
+//     --font-weight-bold: 700;
+//     --text-color-dark: var(--color-black);
+//     --text-color-medium: var(--color-grey-600);
+//     --transition-duration-fast: 150ms;
+//     --transition-duration-medium: 300ms;
+//     --transition-timing-function-ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+//     --left-gutter-desktop-width: 56px;
+//     --medium-gutter-size: 16px;
+//     --small-gutter-size: 8px;
