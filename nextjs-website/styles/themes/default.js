@@ -1,13 +1,20 @@
 export default {
     // Temp fonts
     fonts: {
-        secondary: "inter, sans-serif",
+        secondary: "Inter, sans-serif",
+       
       main: "Roboto Mono', monospace"
    
+    },
+    //sizes:
+    size:{
+      leftgutterdesktopwidth: "56px",
+      mediumguttersize:"16px"
     },
     // Colors for layout
     colors: {
     
+           c:"#000",
            primary1:"#abb2aa",
             color2: "#526c69",
             color3: "#00513b",

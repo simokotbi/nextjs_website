@@ -1,10 +1,10 @@
 import React from 'react';
 import  Layout  from '../src/layout/Layout';
-
+import Hero from '../components/hero/Hero';
 function HomePage(){
   return (
     <Layout>
-      <p>home page</p>
+     <Hero/>
      </Layout>
   );
 }
