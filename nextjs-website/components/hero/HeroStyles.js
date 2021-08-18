@@ -6,10 +6,10 @@ export const Div=styled.div`
   flex-direction: column;
   align-items: flex-start;
    background:none;
-   @media only screen and (min-width:640px){
+   /* @media only screen and (min-width:640px){
      margin-left: 90px; 
     
-   }
+   } */
   
 `;
 

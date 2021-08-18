@@ -12,6 +12,7 @@ function Header(){
    <GlobalHeader> 
       <Div1>
          <Logo><img src="https://cdn.logo.com/hotlink-ok/logo-social.png" rel=""/>
+       
          </Logo>
       </Div1>
       <Div2>

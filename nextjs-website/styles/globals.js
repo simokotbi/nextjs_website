@@ -20,7 +20,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     cursor: default;
     background-color: #f8f8f8;
-   
+    overflow-x: hidden;
   }
 
 
