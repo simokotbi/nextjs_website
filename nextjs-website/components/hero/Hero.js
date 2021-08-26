@@ -10,16 +10,11 @@ function Hero(){
 <Div>
        <SectionTitle >
           Welcome To <br />
-          My Personal Portfolio
+          Our Website
         </SectionTitle>
         <SectionText>
         Im kotbi Mohamed Im a Full stack developer with 5 years working experience.
 
-Ive developed PWAs and high performance web pages, also have experience with website optimizations.
-
-For back-end Im using Nodejs with Mongodb, GraphQL APIs,Java,PHP.
-
-Im good at algorithms and data structures.
         </SectionText>
 </Div>
 </Container>

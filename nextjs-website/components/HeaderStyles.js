@@ -6,7 +6,7 @@ position: fixed;
 left: 0; 
 bottom: 0;
 top: 0;
-height: 100vh;
+/* height: 100vh; */
 
 display: flex;
 flex-direction: column;
@@ -30,7 +30,8 @@ justify-content:space-between;
     top: 90vh;
     width: 100%;
     height: ${props=>props.theme.size.leftgutterdesktopwidth};
-
+    transition-property: opacity, left, top, height;
+  transition-duration: 3s, 5s;
 }
 `;
 export const Div1=styled.div`

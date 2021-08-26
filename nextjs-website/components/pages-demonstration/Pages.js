@@ -2,17 +2,31 @@ import React from 'react';
 import Link from 'next/link';
 import { Container } from '../../src/layout/LayoutStyles';
 import {Pagesgrid,Img}from './PagesStyle';
-function Pages(){
+import { OurServices } from '../constants/Constants';
+import img from '../../public/images/1.jpg';
+import { element } from 'prop-types';
 
-    return(
+const Pages=()=>{
+
+   return ( 
         <Container>
-            <Pagesgrid>
-            <Img src="https://cdn.logo.com/hotlink-ok/logo-social.png" rel=""/>
-            <Img src="https://cdn.logo.com/hotlink-ok/logo-social.png" rel=""/>
-            <Img src="https://cdn.logo.com/hotlink-ok/logo-social.png" rel=""/>
+             
+        
+         
+                      <Pagesgrid >     
+            {OurServices.map((myelement,id)=>{
+                    return( 
+            <Img key={id} src={myelement.image}/>
+             );
+            })}
+           
+            </Pagesgrid> 
+           
             
-            </Pagesgrid>
-        </Container>
-    );
+         
+               
+             
+        </Container>);
+    
 }
 export default Pages;
