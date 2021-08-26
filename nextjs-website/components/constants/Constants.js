@@ -15,4 +15,7 @@ export const OurServices=[
         title:"Templates",
         image:"/images/3.jpg"
     }
+];
+export const images=[
+    "/images/1.jpg","/images/2.jpg","/images/.jpg" 
 ]

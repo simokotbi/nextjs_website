@@ -1,18 +1,32 @@
 import styled from "styled-components";
 
 export const Div=styled.div`
-   padding: 170px 16px 70px 16px;
+margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
    background:none;
+   flex: 1 1 400px;
+ 
    /* @media only screen and (min-width:640px){
      margin-left: 90px; 
     
    } */
   
 `;
-
+export const Div2=styled.div`
+background-color: black;
+flex: 1 1 400px;
+transform: skew(20deg);
+box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+`;
+export const Wrapper=styled.div`
+display:  flex;
+padding: 100px 16px 70px 16px;
+align-items: center;
+flex-wrap: wrap;
+width: 100%;
+`;
 export const SectionTitle=styled.h1`
 
 font-family: ${props=>props.theme.fonts.secondary};
