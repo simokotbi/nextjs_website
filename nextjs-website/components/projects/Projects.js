@@ -12,9 +12,9 @@ function Projects(){
      <ProjectsSection img={bgi} >
         <Title>About me <Marker/></Title>
         <Wrapper>
-<ColLeft><p>iodehjfusdhfsdjkfhskjdfhsjkdf</p> </ColLeft>
+<ColLeft><p>iodehjfusdhfsdjkfhskjhsjkdf</p> </ColLeft>
 </Wrapper>
-     </ProjectsSection>
+     </ProjectsSection> 
      </ContainerMr>
 </Container>
     );
