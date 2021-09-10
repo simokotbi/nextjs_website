@@ -1,14 +1,16 @@
 import React from 'react';
 import Header from '../../components/Header';
-
-import { Container } from './LayoutStyles';
+import { Container,Circle } from './LayoutStyles';
+import { Example } from '../../components/animations/animation';
 
 
 function Layout ({children}){
+  
 return (
 <Container>
-<Header/>
 
+<Header/>
+<Circle><Example/></Circle>
 <main >{children}</main> 
 </Container>
 );

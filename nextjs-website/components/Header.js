@@ -14,6 +14,7 @@ function Header(){
          <Logo><img src="https://cdn.logo.com/hotlink-ok/logo-social.png" rel=""/>
        
          </Logo>
+       
       </Div1>
       <Div2>
       <li> 
