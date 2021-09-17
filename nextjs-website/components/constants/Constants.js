@@ -21,4 +21,9 @@ export const images=[
 ];
 export const bgi=[
     "/images/codebg.jpg"
-]
+];
+export const TimeLineData = [
+    { year: 2017, text: 'Started my journey', },
+    { year: 2020, text: 'Worked as a freelance developer', },
+    { year: 2021, text: 'Starting my own platform', },
+  ];

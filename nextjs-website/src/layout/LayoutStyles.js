@@ -22,4 +22,4 @@ export const Circle=styled.div`
   width: 120px;
   height: 120px;
 z-index: 999;
-`;
+`; 

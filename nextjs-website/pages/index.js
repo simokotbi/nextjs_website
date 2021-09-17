@@ -2,14 +2,14 @@ import React from 'react';
 import  Layout  from '../src/layout/Layout';
 import Hero from '../components/hero/Hero';
 import Pages from '../components/pages-demonstration/Pages';
-import Projects from '../components/projects/Projects';
+import Aboutme from '../components/aboutme/Aboutme';
 
 function HomePage(){
   return (
     <Layout>
      <Hero/>
     
-     <Projects/>
+     <Aboutme/>
      <Pages/>
      </Layout>
   );

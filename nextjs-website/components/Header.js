@@ -11,8 +11,8 @@ function Header(){
   <Container>
    <GlobalHeader> 
       <Div1>
-         <Logo><img src="https://cdn.logo.com/hotlink-ok/logo-social.png" rel=""/>
-       
+         <Logo>
+         <img src="https://img.icons8.com/color/48/000000/under-computer.png"/>
          </Logo>
        
       </Div1>
