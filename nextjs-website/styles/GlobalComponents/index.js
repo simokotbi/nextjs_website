@@ -55,7 +55,7 @@ display: grid;
 grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
 grid-gap: 16px;
 text-align: center;
-padding:  1rem;
+padding: 2rem .4rem;
 
 `;
 export const Card=styled.div`
@@ -66,18 +66,20 @@ export const Card=styled.div`
 
 `;
 export const Title=styled.h1`
+display:flex;
+align-items: center;
 font-family: ${props=>props.theme.fonts.secondary};
 margin:0 0 0 26px;
-text-align: initial;
+text-align: ${props=>props.TAL};
 padding: 20px 20px 0 20px;
 font-size: min(max(2.6rem, 4vw), 4rem);
 line-height: 40px;
 font-weight: 500;
 letter-spacing: 0.025rem;
 color:${props=>props.color};
-background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
+/* background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
  -webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+-webkit-text-fill-color: transparent; */
 
 `;
 export const SmCardswrapper =styled(Grid)`
@@ -85,9 +87,13 @@ grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
 
 `;
 export const SmCard=styled(Card)`
+display:flex;
+align-items: center;
 max-width:250px;
 width:100%;
-padding:2rem;
-border-radius:8px;
+padding:1rem 4.5rem;
+border-radius:6px;
 color:#fff;
+font-size: min(max(1.6rem, 4vw), 1.6rem);
+font-family: ${props=>props.theme.fonts.secondary};
 `;

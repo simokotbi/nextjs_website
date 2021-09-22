@@ -1,10 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Container } from "../../src/layout/LayoutStyles";
-
+import {Particlesanimation}from "../animations/animation";
 import {bgi,TimeLineData} from '../constants/Constants'; 
 import {ContainerMr,Grid,Card,Title,SmCardswrapper,SmCard}from '../../styles/GlobalComponents/index';
 import {Carouselbutton,ProjectsSection,CarouselText,CarouselTitle,Text,H2,CarouselContainer,CarouselMobileScrollNode,CarouselItem}from './AboutmeStyles';
-
 
 
 function Aboutme(){
@@ -40,14 +39,16 @@ window.addEventListener('resize', handleResize);
     return(
         <Container>
 <ContainerMr >
+
      <ProjectsSection img={bgi} >
-        <Title color='transparent'>About me </Title>
+   <Particlesanimation/>
+        <Title color='#fff' TAL="initial"><img src="https://img.icons8.com/color/48/000000/blockly-green.png"/>About me </Title>
         
      <Grid>
          <Card BGC='transparent' MR=".5rem 5vw" >
 {/* <Titlesection>Kotbi mohamed</Titlesection> */}
 
-<H2 >Im <span style={{color:"#498AED"}}>kotbi Mohamed</span> Im a Full stack developer with 5 years working experience.</H2>
+<H2 >Im <span style={{color:"#498AED"}}>kotbi Mohamed </span> Im a Full stack developer with 3 years working experience.</H2>
 <Text>Now that you know who I am, let me tell you more. I am a passionate person who loves to work on new projects every time. Hence, I have worked on different types of projects, for example, web apps in Spring Boot, Android apps using Android Studio, and simple competitive programming algorithms. To know more about my skills and projects, please scroll down.</Text>
   {/* <SmCardswrapper>
       <SmCard BGC="#2b2b30" >hallllowjsjkjsdf</SmCard>

@@ -1,16 +1,17 @@
 import React from 'react';
 import  Layout  from '../src/layout/Layout';
 import Hero from '../components/hero/Hero';
-import Pages from '../components/pages-demonstration/Pages';
+import Projects from '../components/Projects-demonstration/Projects';
 import Aboutme from '../components/aboutme/Aboutme';
-
+import Skills from '../components/skills/Skills';
 function HomePage(){
   return (
     <Layout>
      <Hero/>
     
      <Aboutme/>
-     <Pages/>
+     <Projects/>
+     <Skills/>
      </Layout>
   );
 }

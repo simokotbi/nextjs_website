@@ -54,7 +54,7 @@ var myval;
 </ColLeft>
 <ColRight style={{backgroundImage:`url(${images[current]})`,backgroundSize:'cover',transition: "all 1s ease-out"}}>
 
-<Particles 
+{/* <Particles 
                 
                 params={{
                     "particles": {
@@ -79,7 +79,7 @@ var myval;
                   
                 }}
                
-                 />
+                 /> */}
 </ColRight>
 </Wrapper>
 </ContainerMr>
