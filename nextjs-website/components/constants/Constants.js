@@ -1,4 +1,4 @@
-import {JavaSvg,CPPSvg,CSvg,PHPSvg,JSSvg,TSSvg,HTMLSvg,CSSSvg,AndroidSvg,CsharpSvg,NodejsSvg}from '../animations/animation';
+import {JavaSvg,CPPSvg,CSvg,PHPSvg,JSSvg,TSSvg,HTMLSvg,CSSSvg,AndroidSvg,CsharpSvg,NodejsSvg,WPjsSvg,RECTSvg,MYSQLSvg,MONGOSvg}from '../animations/animation';
 export const Myprojects=[
     {
         id:1,
@@ -50,7 +50,13 @@ export const TimeLineData = [
 {name:"Javascript",image:JSSvg()},
 {name:"Typescript",image:TSSvg()},
 {name:"HTML5",image:HTMLSvg()},
+{name:"CSS3",image:CSSSvg()},
 {name:"Android",image:AndroidSvg()},
 {name:"Csharp",image:CsharpSvg()},
-{name:"Nodejs",image:NodejsSvg()}
+{name:"Nodejs",image:NodejsSvg()},
+{name:"WP",image:WPjsSvg()},
+{name:"react",image:RECTSvg()},
+{name:"mysql",image:MYSQLSvg()},
+{name:"",image:MONGOSvg()}
+
   ];
