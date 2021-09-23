@@ -56,7 +56,7 @@ grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
 grid-gap: 16px;
 text-align: center;
 grid-gap: 1rem;
-padding:.6rem;
+padding:${props=>props.PAD} ;
 `;
 export const Card=styled.div`
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
