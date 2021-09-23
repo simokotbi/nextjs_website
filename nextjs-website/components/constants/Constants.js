@@ -1,4 +1,4 @@
-import {JavaSvg,CPPSvg,CSvg}from '../animations/animation';
+import {JavaSvg,CPPSvg,CSvg,PHPSvg,JSSvg,TSSvg,HTMLSvg,CSSSvg}from '../animations/animation';
 export const Myprojects=[
     {
         id:1,
@@ -43,7 +43,12 @@ export const TimeLineData = [
     { year: 2021, text: 'Starting my own platform', },
   ];
   export const Languages=[
-{name:"java",image:JavaSvg()},
+{name:"Java",image:JavaSvg()},
 {name:"C",image:CSvg()},
 {name:"C++",image:CPPSvg()},
+{name:"PHP",image:PHPSvg()},
+{name:"Javascript",image:JSSvg()},
+{name:"typescript",image:TSSvg()},
+{name:"HTML5",image:HTMLSvg()},
+{name:"CSS",image:CSSSvg()}
   ];

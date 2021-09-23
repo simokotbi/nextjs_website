@@ -55,8 +55,8 @@ display: grid;
 grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
 grid-gap: 16px;
 text-align: center;
-padding: 2rem .4rem;
-
+grid-gap: 1rem;
+padding:.6rem;
 `;
 export const Card=styled.div`
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
@@ -83,17 +83,20 @@ color:${props=>props.color};
 
 `;
 export const SmCardswrapper =styled(Grid)`
-grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
-
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+margin: 0 auto;
 `;
 export const SmCard=styled(Card)`
 display:flex;
 align-items: center;
 max-width:250px;
 width:100%;
-padding:1rem 4.5rem;
+justify-content:space-between;
+padding:.2rem 3.5rem;
+margin:1rem 0;
 border-radius:6px;
 color:#fff;
+
 font-size: min(max(1.6rem, 4vw), 1.6rem);
 font-family: ${props=>props.theme.fonts.secondary};
 `;
