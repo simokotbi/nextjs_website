@@ -11,7 +11,7 @@ function Skills(){
         <Container>
         <ContainerMr bkg="#fff">
         <Title color='#253741' TAL="initial"><img src="https://img.icons8.com/color/48/000000/blockly-blue.png"/>Skills</Title>  
-                     <H1 style={{margin:"1.5rem 2rem"}}><img src="https://img.icons8.com/color/48/000000/source-code.png"/>here some of my recent projects:</H1>
+                     <H1 style={{margin:"1.5rem 2rem"}}><img src="https://img.icons8.com/color/48/000000/source-code.png"/>I go to great lengths to polish my skills:</H1>
                       <Grid style={{justifyItems: "center"}}>
                           {Languages.map((item,id)=>{  
                               return(               
