@@ -91,10 +91,10 @@ display:flex;
 align-items: center;
 max-width:250px;
 width:100%;
-justify-content:space-between;
+justify-content:center;
 padding: 1rem 4rem;
 margin:1rem 0;
-border-radius:6px;
+border-radius:8px;
 color:#fff;
 
 font-size: min(max(1.6rem, 4vw), 1.6rem);

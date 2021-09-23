@@ -17,7 +17,7 @@ function Skills(){
                               return(               
            <SmCardswrapper key={id}>
                             
-      <SmCard BGC="#2b2b30" >  <>{item.image}</>  
+      <SmCard BGC="#2b2b30" >  < >{item.image}</>  
     {item.name}
       </SmCard>
       
