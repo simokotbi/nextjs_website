@@ -92,7 +92,7 @@ align-items: center;
 max-width:250px;
 width:100%;
 justify-content:space-between;
-padding:.2rem 3.5rem;
+padding: 1rem 4rem;
 margin:1rem 0;
 border-radius:6px;
 color:#fff;

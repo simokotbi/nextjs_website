@@ -57,6 +57,6 @@ export const TimeLineData = [
 {name:"WP",image:WPjsSvg()},
 {name:"react",image:RECTSvg()},
 {name:"mysql",image:MYSQLSvg()},
-{name:"",image:MONGOSvg()}
+{name:"mongodb",image:MONGOSvg()}
 
   ];
