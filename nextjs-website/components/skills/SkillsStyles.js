@@ -9,3 +9,9 @@ letter-spacing: 1.5px;
 text-align: center;
 font-size: min(max(1.6rem, 4vw), 2rem);
 `;
+export const LangImg=styled.div`
+max-height:60px;
+height: 60%;
+max-width:60px;
+width:60%;
+`;
