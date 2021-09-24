@@ -21,6 +21,7 @@ const GlobalStyles = createGlobalStyle`
     cursor: default;
     /* background-color: #f8f8f8; */
     background-color: #cece;
+  
     overflow-x: hidden;
    
   }

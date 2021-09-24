@@ -1,4 +1,4 @@
-import {JavaSvg,CPPSvg,CSvg,PHPSvg,JSSvg,TSSvg,HTMLSvg,CSSSvg,AndroidSvg,CsharpSvg,NodejsSvg,WPjsSvg,RECTSvg,MYSQLSvg,MONGOSvg}from '../animations/animation';
+import {JavaSvg,CPPSvg,CSvg,PHPSvg,JSSvg,TSSvg,HTMLSvg,CSSSvg,AndroidSvg,CsharpSvg,NodejsSvg,WPjsSvg,RECTSvg,MYSQLSvg,MONGOSvg,AngularSvg}from '../animations/animation';
 export const Myprojects=[
     {
         id:1,
@@ -43,20 +43,21 @@ export const TimeLineData = [
     { year: 2021, text: 'Starting my own platform', },
   ];
   export const Languages=[
-{name:"Java",image:JavaSvg()},
-{name:"C",image:CSvg()},
-{name:"C++",image:CPPSvg()},
-{name:"PHP",image:PHPSvg()},
+
 {name:"Javascript",image:JSSvg()},
 {name:"Typescript",image:TSSvg()},
 {name:"HTML5",image:HTMLSvg()},
 {name:"CSS3",image:CSSSvg()},
+{name:"Java",image:JavaSvg()},
+{name:"C",image:CSvg()},
+{name:"C++",image:CPPSvg()},
+{name:"PHP",image:PHPSvg()},
 {name:"Android",image:AndroidSvg()},
 {name:"Csharp",image:CsharpSvg()},
 {name:"Nodejs",image:NodejsSvg()},
 {name:"WP",image:WPjsSvg()},
 {name:"react",image:RECTSvg()},
+{name:"ANGULAR",image:AngularSvg()},
 {name:"mysql",image:MYSQLSvg()},
 {name:"mongodb",image:MONGOSvg()}
-
   ];

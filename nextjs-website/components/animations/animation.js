@@ -208,3 +208,6 @@ export const MYSQLSvg=()=>{
 export const MONGOSvg=()=>{
   return(<img src="https://img.icons8.com/color/48/000000/mongodb.png"/>);
 }
+export const AngularSvg=()=>{
+  return(<img src="https://img.icons8.com/color/48/000000/angularjs.png"/>);
+}
