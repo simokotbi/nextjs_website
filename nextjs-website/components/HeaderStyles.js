@@ -6,6 +6,8 @@ position: fixed;
 left: 0; 
 bottom: 0;
 top: 0;
+box-shadow: 5px 0 5px -5px rgb(0 0 0 / 12%);
+    /* border-right: 0.01em solid rgb(241 239 239); */
 /* height: 100vh; */
 z-index: 999;
 display: flex;

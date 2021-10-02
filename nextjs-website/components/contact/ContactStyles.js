@@ -9,6 +9,7 @@ padding: 2rem 1rem;
 max-width: 600px;
 border-radius: 6px;
 box-shadow:0 4px 8px rgba(0,30,84,0.12);
+
 `;
 export const ContformContainer=styled.div`
 padding: 80px 0;
@@ -53,4 +54,8 @@ background-color: #32beef;
 border:none ;
 cursor: pointer;
 box-shadow: rgb(0 196 255 / 90%) 0px 13px 19px -6px;
+`;
+export const Polindron=styled.div`
+clip-path: polygon(0% 14%, 100% 0px, 100% 84%, 0px 100%);
+/* padding: 8rem 1rem 7rem; */
 `;

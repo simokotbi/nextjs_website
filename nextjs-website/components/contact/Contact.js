@@ -1,9 +1,10 @@
 import React from "react";
 import {Container}from '../../src/layout/LayoutStyles';
 import {ContainerMr}from '../../styles/GlobalComponents/index';
-import {Contactform,Form,Input,Textarea,ContformContainer,Button}from './ContactStyles';
+import {Contactform,Form,Input,Textarea,ContformContainer,Button,Polindron}from './ContactStyles';
 function Contact(){
     return(
+        <Polindron>
         <Container>
         <ContainerMr bkg="#f5f5f5">
           <ContformContainer> <Contactform>
@@ -18,7 +19,7 @@ function Contact(){
               
            </Contactform> </ContformContainer>
         </ContainerMr>
-        </Container>
+        </Container></Polindron>
     );
 }
 export default Contact

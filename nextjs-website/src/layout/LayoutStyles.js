@@ -19,7 +19,7 @@ export const Circle=styled.div`
  position: fixed;
   top: 20px;
   right: 20px;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
 z-index: 999;
 `; 

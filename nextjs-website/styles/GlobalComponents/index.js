@@ -58,7 +58,8 @@ grid-gap: 2rem;
 padding:${props=>props.PAD} ;
 `;
 export const Card=styled.div`
-  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+  box-shadow: 3px 4px 9px rgba(80, 78, 78, 0.5);
+  /* box-shadow:0 4px 8px rgba(0,30,84,0.12); */
   position: relative;
   background-color: ${props=>props.BGC};
  margin: ${props=>props.MR};
@@ -82,7 +83,7 @@ color:${props=>props.color};
 
 `;
 export const SmCardswrapper =styled(Grid)`
-grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns: repeat(auto-fit,minmax(4,1fr));
 margin: 0 auto;
 `;
 export const SmCard=styled(Card)`
