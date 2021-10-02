@@ -42,12 +42,12 @@ var myval;
 <ColLeft> 
      <SectionTitle  >
          
-        Hallow <br />
+     Hello <br />
           i'm kotbi Mohamed
 
         </SectionTitle>
         <SectionText>
-        Im kotbi Mohamed Im a Full stack developer with 5 years working experience.
+        Im kotbi Mohamed Im a Full stack developer with 3 years working experience.
    
         </SectionText>
         <Btn MR="20px" white>Get in touch</Btn>

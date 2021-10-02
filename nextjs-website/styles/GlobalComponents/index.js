@@ -52,10 +52,9 @@ width: 100%;
 
 export const Grid=styled.section`
 display: grid;
-grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-grid-gap: 16px;
+grid-template-columns: repeat(auto-fit,minmax(310px,1fr));
 text-align: center;
-grid-gap: 1rem;
+grid-gap: 2rem;
 padding:${props=>props.PAD} ;
 `;
 export const Card=styled.div`

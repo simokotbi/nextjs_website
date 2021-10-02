@@ -7,7 +7,7 @@ color: #000;
 text-transform: uppercase;
 letter-spacing: 1.5px;
 text-align: center;
-font-size: min(max(1.6rem, 4vw), 2rem);
+font-size: min(max(2rem, 4vw), 1rem);
 `;
 export const LangImg=styled.div`
 max-height:60px;

@@ -14,20 +14,21 @@ export const Img=styled.img`
    
 `;
 export const Imgbtn=styled.button`
-color: #629CF1;
-background-color: white;
-border: 1px solid #cececc;
-padding: 8px ;
+padding: .5rem 1.4rem;;
 cursor: pointer;
 height: fit-content;
 position: absolute;
 top: 90%;
-left:35%;
-/* transform: rotate(90deg);  */
+left:27%;
 text-align: center;
 z-index: 10;
 font-size: 16px;
-
+background: rgb(249, 249, 249);
+    color: rgb(0, 195, 255);
+    box-shadow: rgb(185 185 185) 0px 13px 19px -6px;
+  border: none;
+    border-radius: 0.3rem;
+   
 `;
 export const H1=styled.h1`
 display: flex;
@@ -36,5 +37,5 @@ color: #000;
 text-transform: uppercase;
 letter-spacing: 1.5px;
 justify-content: ${props=>props.JUC};
-font-size: min(max(1.6rem, 4vw), 2rem);
+font-size: min(max(2rem, 4vw), 1rem);
 `;
