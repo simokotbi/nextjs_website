@@ -77,11 +77,14 @@ export const NavLink=styled.a`
   text-align: center;
   display: flex;
     align-items: center;
-    color: #2b2b30;
+    color: rgba(0,0,0,.8);
     border:1px solid ${props=>props.theme.colors.colorgrey80};
     font-size: 1.6rem;
     height: 44px;
-  
+    @media ${(props)=>props.theme.breakpoints.sm}{
+      font-size: 1rem;
+      margin: 2px 6px;
+    }
   
 `;
 

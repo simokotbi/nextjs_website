@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import { AiFillAlipaySquare } from "react-icons/ai";
-import { DiAndroid,DiEclipse } from "react-icons/di";
+import { FaHome ,FaUserTie,FaProjectDiagram,FaTasks} from "react-icons/fa";
+
 import {GlobalHeader,Div1,Div2,Logo,NavLink} from './HeaderStyles';
 import styled from "styled-components";
 import { Container } from '../src/layout/LayoutStyles';
@@ -25,7 +25,7 @@ function Header(){
       <li> 
           <Link href="#">
          <NavLink>
-           <AiFillAlipaySquare/>
+           <FaHome/>
            
         </NavLink>      
         </Link> 
@@ -33,14 +33,21 @@ function Header(){
         <li> 
           <Link href="#">
          <NavLink>
-         <DiAndroid/>
+         <FaUserTie/>
         </NavLink>      
         </Link> 
         </li>
         <li> 
           <Link href="#">
          <NavLink>
-         <DiEclipse/>
+         <FaTasks/>
+        </NavLink>      
+        </Link> 
+        </li>
+        <li> 
+          <Link href="#" >
+         <NavLink>
+         <FaProjectDiagram/>
         </NavLink>      
         </Link> 
         </li>
