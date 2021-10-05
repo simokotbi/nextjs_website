@@ -77,10 +77,16 @@ export const NavLink=styled.a`
   text-align: center;
   display: flex;
     align-items: center;
-    color: rgba(0,0,0,.8);
+    color: #9E9EA7;
     border:1px solid ${props=>props.theme.colors.colorgrey80};
     font-size: 1.6rem;
     height: 44px;
+    &:hover{
+      color: #000;
+      transform: scale(1.1);
+    }&:active{
+     color: #000;
+    }
     @media ${(props)=>props.theme.breakpoints.sm}{
       font-size: 1rem;
       margin: 2px 6px;
