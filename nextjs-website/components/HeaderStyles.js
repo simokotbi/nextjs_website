@@ -84,8 +84,6 @@ export const NavLink=styled.a`
     &:hover{
       color: #000;
       transform: scale(1.1);
-    }&:active{
-     color: #000;
     }
     @media ${(props)=>props.theme.breakpoints.sm}{
       font-size: 1rem;

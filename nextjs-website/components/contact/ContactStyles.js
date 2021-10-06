@@ -58,4 +58,5 @@ box-shadow: rgb(0 196 255 / 90%) 0px 13px 19px -6px;
 export const Polindron=styled.div`
 clip-path: polygon(0% 14%, 100% 0px, 100% 84%, 0px 100%);
 /* padding: 8rem 1rem 7rem; */
+min-width: 320px;
 `;

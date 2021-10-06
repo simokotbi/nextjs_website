@@ -24,7 +24,7 @@ function Header(){
      
       <li> 
           <Link href="#">
-         <NavLink>
+         <NavLink title="Home">
            <FaHome/>
            
         </NavLink>      
@@ -32,21 +32,21 @@ function Header(){
         </li>
         <li> 
           <Link href="#">
-         <NavLink>
+         <NavLink title="About me">
          <FaUserTie/>
         </NavLink>      
         </Link> 
         </li>
         <li> 
           <Link href="#">
-         <NavLink>
+         <NavLink title="Projects">
          <FaTasks/>
         </NavLink>      
         </Link> 
         </li>
         <li> 
           <Link href="#" >
-         <NavLink>
+         <NavLink title="Skills">
          <FaProjectDiagram/>
         </NavLink>      
         </Link> 
