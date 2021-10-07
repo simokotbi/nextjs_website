@@ -5,22 +5,32 @@ import {Contactform,Form,Input,Textarea,ContformContainer,Button,Polindron}from 
 import { useState } from 'react';
 
 function Contact(){
-let name=
+const [name,SetName]=useState('');
+const [email,SetEmail]=useState('');
+const [message,SetMessage]=useState('');
+const [submited,SetSubmited]=useState(false);
 const contactme=async event=>{
+  try{
 event.preventDefault();
-const res=await fetch(
-'',{
+console.log('sending...');
+let res=await fetch(
+'api/contact',{ method: 'POST',
+     headers:{'Accept': 'application/json, text/plain, */*', 
+       'Content-Type': 'application/json'},
     body: JSON.stringify({
-        name: event.target.name.value,
-        email:event.target.email.value,
-        message:event.target.message.value
-      }),
-      method: 'POST',
-     headers:{ 'Content-Type': 'application/json'}
+        name,
+        email,
+        message
+      })    
 }
+); if(res.status===200){
+  console.log('status submited');
+  SetSubmited(true);
+  SetName('');
+  SetEmail('');
+  SetMessage('');
 
-
-)
+}}catch(err){console.log(err)}
 }
 
 
@@ -32,10 +42,10 @@ const res=await fetch(
                
                <Form>
 
-               <Input type="text" name="name" placeholder="Full Name" />
-        <Input type="email" name="email" placeholder="Email"/>
-        <Textarea type="text" name="message" placeholder="Message"/>
-       <Button type="submit">SEND MESSAGE</Button>
+               <Input type="text" name="name" placeholder="Full Name" onChange={(e)=>{SetName(e.target.value)}} />
+        <Input type="email" name="email" placeholder="Email" onChange={(e)=>{SetEmail(e.target.value)}}/>
+        <Textarea type="text" name="message" placeholder="Message" onChange={(e)=>{SetMessage(e.target.value)}}/>
+       <Button type="submit" onClick={(e)=>{contactme(e)}}>SEND MESSAGE</Button>
                </Form>
               
            </Contactform> </ContformContainer>
