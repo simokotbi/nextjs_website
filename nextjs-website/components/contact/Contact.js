@@ -2,12 +2,14 @@ import React from "react";
 import {Container}from '../../src/layout/LayoutStyles';
 import {ContainerMr}from '../../styles/GlobalComponents/index';
 import {Contactform,Form,Input,Textarea,ContformContainer,Button,Polindron}from './ContactStyles';
-function Contact(){
+import { useState } from 'react';
 
+function Contact(){
+let name=
 const contactme=async event=>{
 event.preventDefault();
 const res=await fetch(
-'http://localhost:3000/',{
+'',{
     body: JSON.stringify({
         name: event.target.name.value,
         email:event.target.email.value,
@@ -29,7 +31,7 @@ const res=await fetch(
           <ContformContainer> <Contactform>
                
                <Form>
-                 <a href="mailto:simojetta2@gmail.com"></a>
+
                <Input type="text" name="name" placeholder="Full Name" />
         <Input type="email" name="email" placeholder="Email"/>
         <Textarea type="text" name="message" placeholder="Message"/>
