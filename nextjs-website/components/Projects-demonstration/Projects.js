@@ -1,17 +1,14 @@
 import React from 'react';
-import Link from 'next/link';
 import { Container } from '../../src/layout/LayoutStyles';
 import {Img,Imgbtn,H1}from './ProjectsStyle';
 import { Myprojects } from '../constants/Constants';
-import img from '../../public/images/1.jpg';
-import { element } from 'prop-types';
-import { HR } from '../../styles/GlobalComponents';
+
 import {ContainerMr,Grid,Card,Title}from '../../styles/GlobalComponents/index';
 
 const Projects=()=>{
 
    return ( 
-        <Container>
+        <Container id="Projects">
                 <ContainerMr bkg="#fff">
            
         

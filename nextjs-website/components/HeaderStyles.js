@@ -29,7 +29,7 @@ justify-content:space-between;
     position: fixed;
     left: 0;
     right: 0;
-    top: 90vh;
+    top: 85vh;
     width: 100%;
     height: ${props=>props.theme.size.leftgutterdesktopwidth};
     /* transition-property: opacity, left, top, height;

@@ -11,8 +11,8 @@ export const Btn =styled.button`
 color: #629CF1;
 background-color: #000;
 border: 1px solid #cececc;
-padding:12px 26px ;
-font-size: 1.6rem;
+padding:8px 20px ;
+font-size: 1.4rem;
 cursor: pointer;
 height: fit-content;
 color: ${props => props.primary ? "black" :"white"};
@@ -37,9 +37,8 @@ margin-bottom: 40px;
 `;
 export const ColRight=styled.div`
 flex: 1 1 400px;
-
+height: fit-content;
 box-shadow: 0 3px 5px #ebebeb;
-
 `;
 export const Wrapper=styled.div`
 display:  flex;

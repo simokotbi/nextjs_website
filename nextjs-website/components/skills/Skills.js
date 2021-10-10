@@ -9,11 +9,11 @@ import {motion}from 'framer-motion';
 function Skills(){
    
     return(
-        <Container>
+        <Container >
         <ContainerMr bkg="#fff">
         <Title color='#253741' TAL="initial"><img src="https://img.icons8.com/color/48/000000/blockly-blue.png"/>Skills</Title>  
                      <H1 style={{margin:"1.5rem 2rem"}}><img src="https://img.icons8.com/color/48/000000/source-code.png"/>I go to great lengths to polish my skills:</H1>
-                      <Grid style={{justifyItems: "center"}} PAD=".4rem .4rem 6rem .4rem">
+                      <Grid id="Skills" style={{justifyItems: "center"}} PAD=".4rem .4rem 6rem .4rem">
                           {Languages.map((item,id)=>{  
                               return(               
            <SmCardswrapper key={id}>

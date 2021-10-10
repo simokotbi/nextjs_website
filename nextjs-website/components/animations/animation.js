@@ -128,9 +128,9 @@ export const PHPSvg=()=>{
     <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 266 128">
   <defs>
     <radialGradient id="php-a" cx="30.02%" cy="17.584%" r="124.885%" fx="30.02%" fy="17.584%" gradientTransform="matrix(.52578 0 0 1 .142 0)">
-      <stop offset="0%" stop-color="#FFF"/>
-      <stop offset="50%" stop-color="#4C6B97"/>
-      <stop offset="100%" stop-color="#231F20"/>
+      <stop offset="0%" stopColor="#FFF"/>
+      <stop offset="50%" stopColor="#4C6B97"/>
+      <stop offset="100%"stopColor="#231F20"/>
     </radialGradient>
   </defs>
   <g fill="none">

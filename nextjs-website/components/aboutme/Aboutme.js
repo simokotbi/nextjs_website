@@ -12,6 +12,7 @@ const CarouselData_length=TimeLineData.length;
 const [activeItem,setActiveItem]=useState(0);
 
 const scroll = (node, left) => {
+   
     return node.scrollTo({ left, behavior: 'smooth' });
   }
 
@@ -37,7 +38,7 @@ window.addEventListener('resize', handleResize);
 
 
     return(
-        <Container>
+        <Container id="About">
 <ContainerMr >
 
      <ProjectsSection img={bgi} >

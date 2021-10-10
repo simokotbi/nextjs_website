@@ -3,7 +3,7 @@ export const Myprojects=[
     {
         id:1,
         title:"JAVA EE e-commerce website",
-        image:"/images/4.png"
+        image:"/images/4.jpg"
     },
     {
         id:2,
@@ -13,26 +13,13 @@ export const Myprojects=[
     {
         id:3,
         title:"Android game",
-        image:"/images/6.png"
+        image:"/images/6.jpg"
     },
-    {
-        id:4,
-        title:"JAVA EE e-commerce website",
-        image:"/images/4.png"
-    },
-    {
-        id:5,
-        title:"wp template",
-        image:"/images/5.jpg"
-    },
-    {
-        id:6,
-        title:"Android game",
-        image:"/images/6.png"
-    }
+   
 ];
+export const LOGOIMAGE="/images/logo.png";
 export const images=[
-    "/images/1.jpg","/images/2.jpg","/images/3.jpg" 
+    "/images/1.jpg","/images/2.jpg"
 ];
 export const bgi=[
     "/images/codebg.jpg"

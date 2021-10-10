@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { FaHome ,FaUserTie,FaProjectDiagram,FaTasks} from "react-icons/fa";
-
+import {LOGOIMAGE} from './constants/Constants';
 import {GlobalHeader,Div1,Div2,Logo,NavLink} from './HeaderStyles';
 import styled from "styled-components";
 import { Container } from '../src/layout/LayoutStyles';
@@ -13,7 +13,7 @@ function Header(){
       <Div1>
        
           <Logo>
-         <img src="https://img.icons8.com/color/48/000000/under-computer.png"/>
+         <img src={`${LOGOIMAGE}`}/>
        </Logo>       
       </Div1>
        <motion.div
@@ -23,7 +23,7 @@ function Header(){
          >  <Div2>
      
       <li> 
-          <Link href="#">
+          <Link href="#Home">
          <NavLink title="Home">
            <FaHome/>
            
@@ -31,21 +31,21 @@ function Header(){
         </Link> 
         </li>
         <li> 
-          <Link href="#">
+          <Link href="#About">
          <NavLink title="About me">
          <FaUserTie/>
         </NavLink>      
         </Link> 
         </li>
         <li> 
-          <Link href="#">
+          <Link href="#Projects">
          <NavLink title="Projects">
          <FaTasks/>
         </NavLink>      
         </Link> 
         </li>
         <li> 
-          <Link href="#" >
+          <Link href="#Skills" >
          <NavLink title="Skills">
          <FaProjectDiagram/>
         </NavLink>      

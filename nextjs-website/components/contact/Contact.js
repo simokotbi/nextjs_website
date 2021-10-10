@@ -23,20 +23,22 @@ let res=await fetch(
         message
       })    
 }
-); if(res.status===200){
+);
+  if(res.ok){
   console.log('status submited');
   SetSubmited(true);
   SetName('');
   SetEmail('');
   SetMessage('');
-
-}}catch(err){console.log(err)}
+  }
+  
+}catch(err){console.log(err)}
 }
 
 
     return(
         <Polindron>
-        <Container>
+        <Container id="Contact">
         <ContainerMr bkg="#f5f5f5">
           <ContformContainer> <Contactform>
                
