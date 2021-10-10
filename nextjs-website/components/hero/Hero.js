@@ -6,7 +6,7 @@ import { Container } from '../../src/layout/LayoutStyles';
 
 import { useViewportScroll } from "framer-motion";
 import { images } from '../constants/Constants';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 
 
 // export const CircleIndicator = () => {
@@ -32,7 +32,12 @@ var myval;
   }
 
   myval= setInterval(ChangeIt,4000);
-
+  useEffect(() => {
+    
+    return () => {
+      setCount({}); // This worked for me
+    };
+}, []);
   const { scrollYProgress } = useViewportScroll()
     return(
         <Container id="Home">

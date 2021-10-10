@@ -4,7 +4,7 @@ export default async function(req,res){
     let nodemailer = require('nodemailer')
     const PASSWORD=process.env.password;
     nodemailer=require('nodemailer');
-    const transporter=nodemailer.createTransport({
+    const transporter=await nodemailer.createTransport({
         port: 465,
         host: "smtp.gmail.com",
         auth: {
@@ -25,6 +25,8 @@ export default async function(req,res){
           if(err){console.log(err)}
           else{console.log(info)}
       })
-      res.status(200);
+     await res.status(200).json({});
+      
     console.log(req.body);
+    
 }

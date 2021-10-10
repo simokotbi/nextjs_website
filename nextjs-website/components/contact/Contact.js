@@ -13,8 +13,8 @@ const contactme=async event=>{
   try{
 event.preventDefault();
 console.log('sending...');
-let res=await fetch(
-'api/contact',{ method: 'POST',
+const res=await fetch(
+'api/contact',{ method: 'post',
      headers:{'Accept': 'application/json, text/plain, */*', 
        'Content-Type': 'application/json'},
     body: JSON.stringify({
@@ -23,18 +23,34 @@ let res=await fetch(
         message
       })    
 }
-);
-  if(res.ok){
+)
+await console.log("ksjdksdjksdjskjd");
+  if(res.status===200){
   console.log('status submited');
+ 
+    event.preventDefault();
   SetSubmited(true);
-  SetName('');
-  SetEmail('');
-  SetMessage('');
+  SetName("");
+  SetEmail("");
+  SetMessage("");
+  }else{
+  console.log(res.status);
+  }
+}catch(err){
+  console.log(err)
+  return resolve();
   }
   
-}catch(err){console.log(err)}
 }
-
+function handleSubmit(e) {
+    alert("mlmldfmldfmdfl")
+  e.preventDefault();
+  
+  SetSubmited(true);
+  SetName("");
+  SetEmail("");
+  SetMessage("");
+}
 
     return(
         <Polindron>
@@ -42,12 +58,12 @@ let res=await fetch(
         <ContainerMr bkg="#f5f5f5">
           <ContformContainer> <Contactform>
                
-               <Form>
+               <Form onSubmit={(e)=>{handleSubmit(e)}}>
 
-               <Input type="text" name="name" placeholder="Full Name" onChange={(e)=>{SetName(e.target.value)}} />
-        <Input type="email" name="email" placeholder="Email" onChange={(e)=>{SetEmail(e.target.value)}}/>
-        <Textarea type="text" name="message" placeholder="Message" onChange={(e)=>{SetMessage(e.target.value)}}/>
-       <Button type="submit" onClick={(e)=>{contactme(e)}}>SEND MESSAGE</Button>
+               <Input type="text" required="required" name="name" placeholder="Full Name" onChange={(e)=>{SetName(e.target.value)}} />
+        <Input type="email" required="required" name="email" placeholder="Email" onChange={(e)=>{SetEmail(e.target.value)}}/>
+        <Textarea type="text" required name="message" placeholder="Message" onChange={(e)=>{SetMessage(e.target.value)}}/>
+       <Button type="submit" onClick={(e)=>{ contactme(e)}}>SEND MESSAGE</Button>
                </Form>
               
            </Contactform> </ContformContainer>
