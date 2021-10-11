@@ -21,12 +21,13 @@ export default async function(req,res){
         html: `<div>${req.body.message}</div><p>Sent from:
         ${req.body.email}</p>`
       }
-     await transporter.sendMail(mailData,function(err,info){
+     await  transporter.sendMail(mailData,function(err,info){
           if(err){console.log(err)}
           else{console.log(info)}
       })
      await res.status(200).json({});
       
     console.log(req.body);
-    
+    return transporter.sendMail(mailData,(err,info)=>{ if(err){console.log(err)}
+    else{console.log(info)}});
 }

@@ -33,6 +33,7 @@ await console.log("ksjdksdjksdjskjd");
   SetName("");
   SetEmail("");
   SetMessage("");
+  alert("Thank you for contacting me "+name);
   }else{
   console.log(res.status);
   }
@@ -42,15 +43,7 @@ await console.log("ksjdksdjksdjskjd");
   }
   
 }
-function handleSubmit(e) {
-    alert("mlmldfmldfmdfl")
-  e.preventDefault();
-  
-  SetSubmited(true);
-  SetName("");
-  SetEmail("");
-  SetMessage("");
-}
+
 
     return(
         <Polindron>
@@ -58,11 +51,11 @@ function handleSubmit(e) {
         <ContainerMr bkg="#f5f5f5">
           <ContformContainer> <Contactform>
                
-               <Form onSubmit={(e)=>{handleSubmit(e)}}>
+               <Form onSubmit={(e)=>{contactme(e)}}>
 
-               <Input type="text" required="required" name="name" placeholder="Full Name" onChange={(e)=>{SetName(e.target.value)}} />
-        <Input type="email" required="required" name="email" placeholder="Email" onChange={(e)=>{SetEmail(e.target.value)}}/>
-        <Textarea type="text" required name="message" placeholder="Message" onChange={(e)=>{SetMessage(e.target.value)}}/>
+               <Input type="text" value={name} required="required" name="name" placeholder="Full Name" onChange={(e)=>{SetName(e.target.value)}} />
+        <Input type="email" value={email} required="required" name="email" placeholder="Email" onChange={(e)=>{SetEmail(e.target.value)}}/>
+        <Textarea type="text" value={message} required name="message" placeholder="Message" onChange={(e)=>{SetMessage(e.target.value)}}/>
        <Button type="submit" onClick={(e)=>{ contactme(e)}}>SEND MESSAGE</Button>
                </Form>
               
