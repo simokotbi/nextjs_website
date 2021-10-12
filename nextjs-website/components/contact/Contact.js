@@ -21,7 +21,7 @@ axios.post(
   {headers: {
     'Accept': 'application/json, text/plain, */*',
     'Content-Type': 'application/json'
-  }}
+  }} 
 ).then((res)=>{
   console.log(res.status)
   if(res.status===200){
