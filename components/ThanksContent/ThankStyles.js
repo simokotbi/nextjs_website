@@ -1,7 +1,7 @@
 import styled  from "styled-components";
 
 export const Thankscontainer=styled.div`
-margin: 10rem;
+    margin: 10rem auto;
     padding: 1rem;
     text-align: center;
 line-height: 1.2;
