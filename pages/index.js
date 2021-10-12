@@ -7,7 +7,7 @@ import Skills from '../components/skills/Skills';
 import Contact from '../components/contact/Contact';
 
 function HomePage(){
-  return (
+  return ( 
     <Layout>
      <Hero/>
     

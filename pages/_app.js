@@ -2,7 +2,7 @@
 import Theme from '../styles/theme';
 
 function MyApp({ Component, pageProps }) {
-  return (
+  return ( 
 <>
 <Theme>
     <Component {...pageProps} />
