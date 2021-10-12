@@ -4,18 +4,34 @@ import {ContainerMr}from '../../styles/GlobalComponents/index';
 import {Contactform,Form,Input,Textarea,ContformContainer,Button,Polindron}from './ContactStyles';
 import router, { useRouter } from 'next/router';
 import { useForm } from '@formcarry/react';
+import axios from 'axios';
 
 function Contact(){
-const [submited,SetSubmited]=useState(false);
-const {state, submit} = useForm({
-  id: 'RG6OrIgLOhk'
-})
+ const router=useRouter();
+const[name,SetName]=useState('');
+const [email,SetEmail]=useState('');
+const [message,SetMessage]=useState('');
+// const [submited,SetSubmited]=useState(false);
 
-if(state.submitted&&submited&&typeof window!=='undefined'){
-  
-  return <Contact></Contact>
-  //  router=useRouter();
-  //  router.push('/thanks/')
+const submit=e=>{
+
+axios.post(
+  "https://formcarry.com/s/RG6OrIgLOhk", 
+  {name,email,message}, 
+  {headers: {
+    'Accept': 'application/json, text/plain, */*',
+    'Content-Type': 'application/json'
+  }}
+).then((res)=>{
+  console.log(res.status)
+  if(res.status===200){
+    console.log("success");
+    router.push('/thanks/');
+  }else{
+    console.log(res.data.message);
+  }
+}).catch((error)=>{ console.log(error);})
+e.preventDefault();
 }
 
     return(
@@ -25,10 +41,10 @@ if(state.submitted&&submited&&typeof window!=='undefined'){
           <ContformContainer> <Contactform>
                
                <Form onSubmit={submit}>
-               <Input type="text" id="name" name="name" placeholder="Full Name"  /> 
-                <Input type="email" id="email" name="email" placeholder="Email" />
-                <Textarea type="text" id="message" name="message" placeholder="Message"    />
-                <Button type="submit" onClick={()=>{SetSubmited(true)}} >SEND MESSAGE</Button>
+               <Input type="text"  name="name" placeholder="Full Name" onChange={(e)=>{SetName(e.target.value)}} /> 
+                <Input type="email"  name="email" placeholder="Email" onChange={(e)=>{SetEmail(e.target.value)}} />
+                <Textarea type="text"  name="message" placeholder="Message" onChange={(e)=>{SetMessage(e.target.value)}} />
+                <Button type="submit"  >SEND MESSAGE</Button>
                 {/* onClick={()=>{SetSubmited(true)}} */}
                </Form>
               
