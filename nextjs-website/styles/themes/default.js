@@ -2,8 +2,7 @@ export default {
     // Temp fonts
     fonts: {
         secondary: "Inter, sans-serif",
-       
-      main: "Roboto Mono', monospace"
+         primary: "Roboto Mono', monospace"
    
     },
     //sizes:

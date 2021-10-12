@@ -28,11 +28,12 @@ const GlobalStyles = createGlobalStyle`
 
 
 
-  h1,h2,h3,h4,h5,h6,button {
+  h1,h2,h3,h4,h5,h6,button{
     font-family: ${props => props.theme.fonts.secondary};
   }
   a {
     text-decoration: none;
+    font-family: ${props => props.theme.fonts.secondary};
   }
   li{
     list-style: none;

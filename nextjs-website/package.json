@@ -12,6 +12,8 @@
     "deploy": "cross-env NODE_ENV=production firebase deploy --only functions,hosting"
   },
   "dependencies": {
+    "@formcarry/react": "^1.0.3",
+    "axios": "^0.22.0",
     "babel-plugin-styled-components": "^1.13.2",
     "dotenv": "^10.0.0",
     "firebase-admin": "^9.12.0",

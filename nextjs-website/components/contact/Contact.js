@@ -1,49 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import {Container}from '../../src/layout/LayoutStyles';
 import {ContainerMr}from '../../styles/GlobalComponents/index';
 import {Contactform,Form,Input,Textarea,ContformContainer,Button,Polindron}from './ContactStyles';
-import { useState } from 'react';
+import router, { useRouter } from 'next/router';
+import { useForm } from '@formcarry/react';
 
 function Contact(){
-const [name,SetName]=useState('');
-const [email,SetEmail]=useState('');
-const [message,SetMessage]=useState('');
 const [submited,SetSubmited]=useState(false);
-const contactme=async event=>{
-  try{
-event.preventDefault();
-console.log('sending...');
-const res=await fetch(
-'api/contact',{ method: 'post',
-     headers:{'Accept': 'application/json, text/plain, */*', 
-       'Content-Type': 'application/json'},
-    body: JSON.stringify({
-        name,
-        email,
-        message
-      })    
-}
-)
-await console.log("ksjdksdjksdjskjd");
-  if(res.status===200){
-  console.log('status submited');
- 
-    event.preventDefault();
-  SetSubmited(true);
-  SetName("");
-  SetEmail("");
-  SetMessage("");
-  alert("Thank you for contacting me "+name);
-  }else{
-  console.log(res.status);
-  }
-}catch(err){
-  console.log(err)
-  return resolve();
-  }
-  
-}
+const {state, submit} = useForm({
+  id: 'RG6OrIgLOhk'
+})
 
+if(state.submitted&&submited&&typeof window!=='undefined'){
+  
+  return <Contact></Contact>
+  //  router=useRouter();
+  //  router.push('/thanks/')
+}
 
     return(
         <Polindron>
@@ -51,12 +24,12 @@ await console.log("ksjdksdjksdjskjd");
         <ContainerMr bkg="#f5f5f5">
           <ContformContainer> <Contactform>
                
-               <Form onSubmit={(e)=>{contactme(e)}}>
-
-               <Input type="text" value={name} required="required" name="name" placeholder="Full Name" onChange={(e)=>{SetName(e.target.value)}} />
-        <Input type="email" value={email} required="required" name="email" placeholder="Email" onChange={(e)=>{SetEmail(e.target.value)}}/>
-        <Textarea type="text" value={message} required name="message" placeholder="Message" onChange={(e)=>{SetMessage(e.target.value)}}/>
-       <Button type="submit" onClick={(e)=>{ contactme(e)}}>SEND MESSAGE</Button>
+               <Form onSubmit={submit}>
+               <Input type="text" id="name" name="name" placeholder="Full Name"  /> 
+                <Input type="email" id="email" name="email" placeholder="Email" />
+                <Textarea type="text" id="message" name="message" placeholder="Message"    />
+                <Button type="submit" onClick={()=>{SetSubmited(true)}} >SEND MESSAGE</Button>
+                {/* onClick={()=>{SetSubmited(true)}} */}
                </Form>
               
            </Contactform> </ContformContainer>
