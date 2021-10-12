@@ -4,7 +4,7 @@ import {Particlesanimation}from "../animations/animation";
 import {bgi,TimeLineData} from '../constants/Constants'; 
 import {ContainerMr,Grid,Card,Title,SmCardswrapper,SmCard}from '../../styles/GlobalComponents/index';
 import {Carouselbutton,ProjectsSection,CarouselText,CarouselTitle,Text,H2,CarouselContainer,CarouselMobileScrollNode,CarouselItem}from './AboutmeStyles';
-
+ 
 
 function Aboutme(){
 const carousselRef=useRef();
