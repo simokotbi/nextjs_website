@@ -2,7 +2,7 @@ export default {
     // Temp fonts
     fonts: {
         secondary: "Inter, sans-serif",
-         primary: "Roboto Mono', monospace"
+         primary: "'Roboto Mono', monospace"
    
     },
     //sizes:
@@ -32,10 +32,12 @@ export default {
     },
     // Breakpoints for responsive design
     breakpoints: {
+      exsm:'screen and (max-width: 300px)',
       sm: 'screen and (max-width: 640px)',
       md: 'screen and (max-width: 768px)',
       lg: 'screen and (max-width: 1024px)',
       xl: 'screen and (max-width: 1280px)'
+    
     },
   }
   

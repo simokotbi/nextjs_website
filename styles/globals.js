@@ -10,6 +10,8 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     list-style: none;
     text-decoration:none;
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   }
   html {
     /* font-size: 92.5%; */

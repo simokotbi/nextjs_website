@@ -5,6 +5,7 @@ import Projects from '../components/Projects-demonstration/Projects';
 import Aboutme from '../components/aboutme/Aboutme';
 import Skills from '../components/skills/Skills';
 import Contact from '../components/contact/Contact';
+import Footer from '../components/footer/Footer';
 
 function HomePage(){
   return ( 
@@ -15,7 +16,7 @@ function HomePage(){
      <Projects/>
      <Skills/>
      <Contact/>
- 
+      <Footer/>
      </Layout>
   );
 }

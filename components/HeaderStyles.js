@@ -35,6 +35,9 @@ justify-content:space-between;
     /* transition-property: opacity, left, top, height;
   transition-duration: 3s, 5s; */
 }
+@media ${props => props.theme.breakpoints.exsm}{
+  top: 96vh;
+}
 `;
 export const Div1=styled.div`
  /* flex: 1; */
