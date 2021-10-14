@@ -36,7 +36,7 @@ justify-content:space-between;
   transition-duration: 3s, 5s; */
 }
 @media ${props => props.theme.breakpoints.exsm}{
-  top: 96vh;
+  top: 98vh;
 }
 `;
 export const Div1=styled.div`

@@ -43,7 +43,7 @@ function Footer(){
             </Linkslist>
             </FooterGrid>
             <FooterEndtext>
-            Copyright © , Inc. All rights reserved.
+            Copyright © , created with heart by kotbi mohamed.
                  </FooterEndtext>
             </Footerwraper>
             </Footersection>

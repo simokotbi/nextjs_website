@@ -55,7 +55,7 @@ border-radius: 50px;
   }
 `;
 export const FooterEndtext=styled.p`
-margin-top: 12rem;
+margin-top: 14rem;
 color: #8c8c8c;
 font-size: 0.7901234567901234em;
 text-align: center;
