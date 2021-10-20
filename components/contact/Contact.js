@@ -41,9 +41,9 @@ e.preventDefault();
           <ContformContainer> <Contactform>
                
                <Form onSubmit={submit}>
-               <Input type="text"  name="name" placeholder="Full Name" onChange={(e)=>{SetName(e.target.value)}} /> 
-                <Input type="email"  name="email" placeholder="Email" onChange={(e)=>{SetEmail(e.target.value)}} />
-                <Textarea type="text"  name="message" placeholder="Message" onChange={(e)=>{SetMessage(e.target.value)}} />
+               <Input type="text" required  name="name" placeholder="Full Name" onChange={(e)=>{SetName(e.target.value)}} /> 
+                <Input type="email" required  name="email" placeholder="Email" onChange={(e)=>{SetEmail(e.target.value)}} />
+                <Textarea type="text" required  name="message" placeholder="Message" onChange={(e)=>{SetMessage(e.target.value)}} />
                 <Button type="submit"  >SEND MESSAGE</Button>
                 {/* onClick={()=>{SetSubmited(true)}} */}
                </Form>

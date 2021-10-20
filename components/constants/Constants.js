@@ -3,17 +3,23 @@ export const Myprojects=[
     {
         id:1,
         title:"JAVA EE e-commerce website",
-        image:"/images/4.jpg"
+        image:"/images/4.jpg",
+        description:"on this project i did ...",
+        langtitle:["javaEE","html5","css3"]
     },
     {
         id:2,
         title:"wp template",
-        image:"/images/5.jpg"
+        image:"/images/5.jpg",
+        description:"on this project i did ...",
+        langtitle:["javaEE","html5","css3"]
     },
     {
         id:3,
         title:"Android game",
-        image:"/images/6.jpg"
+        image:"/images/6.jpg",
+        description:"on this project i did ...",
+        langtitle:["javaEE","html5","css3"]
     },
    
 ];
