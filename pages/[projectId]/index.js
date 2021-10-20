@@ -21,9 +21,10 @@ function Projectdetails({mainproject}){
 // }
 export async function getStaticPaths() {
     // Return a list of possible value for id
-    const paths = Myprojects.map((project) => ({
-        params: { projectId: project.id.toString() },
-      }))
+    const pagescustomids=[1,2,3];
+    const paths = pagescustomids.map((project) => ({
+        params: { projectId: project.toString() },
+      })) 
     
       // We'll pre-render only these paths at build time.
       // { fallback: false } means other routes should 404.
