@@ -5,26 +5,17 @@ import { Myprojects } from '../../components/constants/Constants';
 import { useRouter } from 'next/dist/client/router';
 
 function Projectdetails({mainproject}){
-    //const router=useRouter();
-    // const [project,SetDetails]=useState([]);
-    // SetDetails(mainproject);
+    
     const project=mainproject;
    return <Projectdeatil project={project} />
  }
-//  const fetchDetails= async (projectId) => {
-//     try{
-// const mainproject=await  Myprojects.find(pro=>pro.id==projectId);
-//   SetDetails(mainproject);
-  
 
-// }catch(err){console.log(err)}
-// }
 export async function getStaticPaths() {
     // Return a list of possible value for id
-    const pagescustomids=[1,2,3];
-    const paths = pagescustomids.map((project) => ({
-        params: { projectId: project.toString() },
-      })) 
+   
+    const paths = Myprojects.map((project) => ({
+        params: { projectId: project.id.toString() },
+      }))
     
       // We'll pre-render only these paths at build time.
       // { fallback: false } means other routes should 404.
@@ -35,7 +26,7 @@ export async function getStaticPaths() {
     // Fetch necessary data for the blog post using params.id
     
    const projectId= params.projectId;
-   console.log(`Building slug: ${params}`)
+  //  console.log(`Building project: ${params}`)
    const mainproject=  Myprojects.find(pro=>pro.id==projectId);
    
  

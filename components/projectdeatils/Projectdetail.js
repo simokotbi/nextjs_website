@@ -1,23 +1,27 @@
 import React, { useEffect } from 'react';
 import {Container}from '../../src/layout/LayoutStyles';
-import {Projectsdetail,IMG,ProjectdConatiner,ProjectTitle,ProjectImage,ProjectLinks,Languages,Language,ProjectDescription}from './ProjectdetailStyles';
-import { SectionTitle,SectionText,Image } from '../hero/HeroStyles';
+import {Projectsdetail,ProjectImage,ProjectLinks,Languages,Language,Image,Text }from './ProjectdetailStyles';
+import {Title}from'../../styles/GlobalComponents/index';
+import {H1}from '../Projects-demonstration/ProjectsStyle';
+
 function Projectdeatil({project}){
+const color=["#526c69","#abb2aa","#fd532f"];
 
 return(
  <Container>
    
 <Projectsdetail project={project}  >
-<ProjectdConatiner>
-<SectionTitle>{project.title}</SectionTitle>
+
+<Title TAL='center' JCC="center">{project.title}</Title>
 <ProjectImage><Image src={project.image} alt={project.title}/></ProjectImage>
 <ProjectLinks></ProjectLinks>
-<Languages ><Language>{project.langtitle}</Language></Languages>
-<SectionText>{project.description}</SectionText>
-</ProjectdConatiner>
+<H1 style={{margin:"1.5rem auto"}} JUC="center">USED TECHNOLOGIES :</H1>
+<Languages >{ project.langtitle.map((pro,index)=>{return( <Language bkg={color[index%3]} key={index}>{pro}</Language>)})}</Languages>
+<Text>{project.description}</Text>
+
 </Projectsdetail>
 
-<p>project details</p>
+
 
  </Container>
 );

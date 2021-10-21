@@ -67,9 +67,11 @@ export const Card=styled.div`
 export const Title=styled.h1`
 display:flex;
 align-items: center;
+
 font-family: ${props=>props.theme.fonts.secondary};
 margin:0 0 0 26px;
 text-align: ${props=>props.TAL};
+justify-content: ${props=>props.JCC};
 padding: 20px 20px 0 20px;
 font-size: min(max(2.6rem, 4vw), 4rem);
 line-height: 40px;
