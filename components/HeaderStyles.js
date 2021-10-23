@@ -7,13 +7,11 @@ left: 0;
 bottom: 0;
 top: 0;
 box-shadow: 5px 0 5px -5px rgb(0 0 0 / 12%);
-    /* border-right: 0.01em solid rgb(241 239 239); */
-/* height: 100vh; */
 z-index: 999;
 display: flex;
 flex-direction: column;
 align-items: center;
-background-color: #fff;
+background-color: ${props=>props.theme.colors.colorwhite};
 justify-content:space-between;
 @media ${(props)=>props.theme.breakpoints.sm}{
     border-radius: 40px;
@@ -31,9 +29,8 @@ justify-content:space-between;
     right: 0;
     top: 85vh;
     width: 100%;
-    height: ${props=>props.theme.size.leftgutterdesktopwidth};
-    /* transition-property: opacity, left, top, height;
-  transition-duration: 3s, 5s; */
+    height: 56px;
+
 }
 @media ${props => props.theme.breakpoints.exsm}{
   top: 98vh;
@@ -75,17 +72,18 @@ export const NavLink=styled.a`
   cursor: pointer;
   border-radius: 30px;
   padding: 0 1.6rem;
-  background-color: #fff;
+  background-color: ${props=>props.theme.colors.colorwhite};
   margin: 5px 10px;
   text-align: center;
   display: flex;
     align-items: center;
-    color: #9E9EA7;
+    color: ${props=>props.theme.colors.colorLinkgris};
+    
     border:1px solid ${props=>props.theme.colors.colorgrey80};
     font-size: 1.6rem;
     height: 44px;
     &:hover{
-      color: #000;
+      color: ${props=>props.theme.colors.colorblack};
       transform: scale(1.1);
     }
     @media ${(props)=>props.theme.breakpoints.sm}{

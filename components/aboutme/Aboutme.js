@@ -2,8 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { Container } from "../../src/layout/LayoutStyles";
 import {Particlesanimation}from "../animations/animation";
 import {bgi,TimeLineData} from '../constants/Constants'; 
-import {ContainerMr,Grid,Card,Title,SmCardswrapper,SmCard}from '../../styles/GlobalComponents/index';
-import {Carouselbutton,ProjectsSection,CarouselText,CarouselTitle,Text,H2,CarouselContainer,CarouselMobileScrollNode,CarouselItem}from './AboutmeStyles';
+import {ContainerMr,Grid,Card}from '../../styles/GlobalComponents/index';
+import {Carouselbutton,ProjectsSection,CarouselText,CarouselTitle,Text,H2,CarouselContainer,CarouselMobileScrollNode,CarouselItem,Title}from './AboutmeStyles';
 
 function Aboutme(){
 const carousselRef=useRef();
@@ -33,6 +33,7 @@ useEffect(()=>{
     scroll(carousselRef.current,0);
 }   
 window.addEventListener('resize', handleResize);
+
 },[]);
 
 
@@ -42,7 +43,7 @@ window.addEventListener('resize', handleResize);
 
      <ProjectsSection img={bgi} >
    <Particlesanimation/>
-        <Title color='#fff' TAL="initial"><img src="https://img.icons8.com/color/48/000000/blockly-green.png"/>About me </Title>
+        <Title  TAL="initial"><img src="https://img.icons8.com/color/48/000000/blockly-green.png"/>About me </Title>
         
      <Grid>
          <Card BGC='transparent' MR=".5rem 5vw" >

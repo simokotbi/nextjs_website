@@ -5,9 +5,10 @@ export const Thankscontainer=styled.div`
     padding: 1rem;
     text-align: center;
     line-height: 1.2;
+    background-color: ${props=>props.theme.colors.colorwhite}; 
 `;
 export const H2=styled.h2`
-color: #000;
+color:  ${props=>props.theme.colors.colorblack};
 letter-spacing: 1px;
 font-size: min(max(2rem, 4vw), 2rem);
 `;
@@ -17,5 +18,5 @@ font-size: min(max(16px, 4vw), 22px);
 
 line-height: 40px;
 font-weight: 600;
-color: #5a5a5e;
+color:  ${props=>props.theme.colors.colorGris1};;
 `;

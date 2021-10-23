@@ -22,7 +22,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     cursor: default;
     /* background-color: #f8f8f8; */
-    /* background-color: #cece; */
+    background-color:${props=>props.theme.colors.colorwhite};
   
     overflow-x: hidden;
    
@@ -36,6 +36,7 @@ const GlobalStyles = createGlobalStyle`
   a {
     text-decoration: none;
     font-family: ${props => props.theme.fonts.secondary};
+    color:${props=>props.theme.colors.colorLinkblue};
   }
   li{
     list-style: none;

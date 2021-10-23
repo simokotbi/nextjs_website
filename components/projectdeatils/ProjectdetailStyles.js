@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
 export const Projectsdetail=styled.div`
-   margin: 4rem auto;
+min-width: 380px;
+   margin: 0 auto;
    padding: 1rem ;
     text-align: center;
     line-height: 1.2;
-    
-    
-   
+    background-color: ${props=>props.theme.colors.colorwhite}; 
 `;
 
 
@@ -40,7 +39,7 @@ max-width: 500px;
 export const Language=styled.p`
 border-radius: 5px;
 padding: 1rem ;
-color: #fff;
+color:${props=>props.theme.colors.colorwhite}; 
 margin: .5rem;
 font-family:${props=>props.theme.fonts.secondary};
 background-color: ${props=>props.bkg};
@@ -52,7 +51,8 @@ font-size: min(max(16px, 4vw), 22px);
 
 line-height: 40px;
 font-weight: 600;
-color: #5a5a5e;
+color: ${props=>props.theme.colors.colorGris1};
+
  margin: 0 15rem;
 @media ${props => props.theme.breakpoints.xl}{
 margin: 0 auto;

@@ -8,11 +8,11 @@ function Projectdeatil({project}){
 const color=["#526c69","#abb2aa","#fd532f"];
 
 return(
- <Container>
+
    
 <Projectsdetail project={project}  >
 
-<Title TAL='center' JCC="center">{project.title}</Title>
+<Title primary TAL='center' JCC="center">{project.title}</Title>
 <ProjectImage><Image src={project.image} alt={project.title}/></ProjectImage>
 <ProjectLinks></ProjectLinks>
 <H1 style={{margin:"1.5rem auto"}} JUC="center">USED TECHNOLOGIES :</H1>
@@ -23,7 +23,6 @@ return(
 
 
 
- </Container>
 );
 }
 export default Projectdeatil;

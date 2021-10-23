@@ -37,7 +37,7 @@ e.preventDefault();
     return(
         <Polindron>
         <Container id="Contact">
-        <ContainerMr bkg="#f5f5f5">
+        <ContainerMr bgprimary>
           <ContformContainer> <Contactform>
                
                <Form onSubmit={submit}>

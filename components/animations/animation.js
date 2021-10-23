@@ -58,7 +58,7 @@ export const Particlesanimation=()=>{
     params={{
         "particles": {
             "number": {
-                "value": 50
+                "value": 30
             },
             
             "size": {

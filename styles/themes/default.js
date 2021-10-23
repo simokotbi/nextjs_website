@@ -6,29 +6,41 @@ export default {
    
     },
     //sizes:
-    size:{
-      leftgutterdesktopwidth: "56px",
-      mediumguttersize:"16px"
-    },
+    // size:{
+    //   leftgutterdesktopwidth: "56px",
+    //   mediumguttersize:"16px"
+    // },
     // Colors for layout
     colors: {
-    
-           c:"#000",
-           primary1:"#abb2aa",
-            color2: "#526c69",
-            color3: "#00513b",
-            colorgrey40: "#fafafa",
-            colorgrey80:"#e7e7e8",
-            colorgrey100: "#d0d0d1",
-            colorgrey400: "#89898c",
-            colorgrey600: "#5a5a5e",
-            colorgrey800:"#2b2b30",
-            colorbrandcold:"#d1bdbe",
-            colorbrandlavender: "#9084b6",
-            colorbrandcobalt: "#0046b5",
-            colorbrandorange:"#fd532f",
-            colorwhite:"#fff",
-            colorblack:"#000"
+      colorwhite:"#fff",
+      colorblack:"#000",
+      colorBlue1:'#32beef',
+      colorBlue2:'#629CF1',
+      colorLinkblue:'#629CF1',
+      colorBorder:'#eee',
+      colorBorder2:'#eaeaea',
+      colorgrey80:"#e7e7e8",
+       colorLinkgris:'#8c8c8c',
+       colorGris1:'#5a5a5e',
+       BgcolorHover:'#212d45',
+       colorTitle:'#253741',
+       colorcntSilver:'#fafafa',
+        colorSmcard:'#2b2b30 ',
+          //  primary1:"#abb2aa",
+          //   color2: "#526c69",
+          //   color3: "#00513b",
+          //   colorgrey40: "#fafafa",
+          //   colorgrey80:"#e7e7e8",
+          //   colorgrey100: "#d0d0d1",
+          //   colorgrey400: "#89898c",
+          //   colorgrey600: "#5a5a5e",
+          //   colorgrey800:"#2b2b30",
+          //   colorbrandcold:"#d1bdbe",
+          //   colorbrandlavender: "#9084b6",
+          //   colorbrandcobalt: "#0046b5",
+          //   colorbrandorange:"#fd532f",
+           
+           
     },
     // Breakpoints for responsive design
     breakpoints: {

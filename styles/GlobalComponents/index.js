@@ -1,26 +1,20 @@
 import styled from "styled-components";
 
-export const HR=styled.hr`
-border: none;
-border-bottom: 2px dashed #000;
-/* #dbe1e8 */
-/* margin: 2rem 0; */
-`;
 
 export const Btn =styled.button`
-color: #629CF1;
-background-color: #000;
-border: 1px solid #cececc;
+color: ${props=>props.theme.colors.colorBlue2};
+background-color: ${props=>props.theme.colors.colorblack};
+border: 1px solid ${props=>props.theme.colors.colorBorder};
 padding:8px 20px ;
 font-size: 1.4rem;
 cursor: pointer;
 height: fit-content;
-color: ${props => props.primary ? "black" :"white"};
+color: ${props => props.primary ?props.theme.colors.colorwhite:props.theme.colors.colorblack };
 margin-top: ${props=>props.MR};
 `;
 export const ContainerMr=styled.div`
 
-background: ${props=>props.bkg};
+background: ${props=>props.bgprimary?props.theme.colors.colorcntSilver:props.theme.colors.colorwhite};
 @media only screen and (min-width:640px){
      margin-left: 60px;
 
@@ -38,7 +32,7 @@ margin-bottom: 40px;
 export const ColRight=styled.div`
 flex: 1 1 400px;
 height: fit-content;
-box-shadow: 0 3px 5px #ebebeb;
+box-shadow: 0 3px 5px ${props=>props.theme.colors.colorBorder2};
 `;
 export const Wrapper=styled.div`
 display:  flex;
@@ -58,9 +52,9 @@ padding:${props=>props.PAD} ;
 `;
 export const Card=styled.div`
   box-shadow: 3px 4px 9px rgba(80, 78, 78, 0.5);
-  /* box-shadow:0 4px 8px rgba(0,30,84,0.12); */
+ 
   position: relative;
-  background-color: ${props=>props.BGC};
+  /* background-color: ${props=>props.theme.colors.colorwhite}; */
  margin: ${props=>props.MR};
 
 `;
@@ -77,10 +71,8 @@ font-size: min(max(2.6rem, 4vw), 4rem);
 line-height: 40px;
 font-weight: 500;
 letter-spacing: 0.025rem;
-color:${props=>props.color};
-/* background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
- -webkit-background-clip: text;
--webkit-text-fill-color: transparent; */
+
+color:${props=>props.primary?props.theme.colors.colorTitle:props.theme.colors.colorwhite};
 
 `;
 export const SmCardswrapper =styled(Grid)`
@@ -90,12 +82,12 @@ margin: 0 auto;
 export const SmCard=styled(Card)`
 display:flex;
 align-items: center;
-
 justify-content:center;
 padding: 1rem 3rem;
 margin:.5rem 0 0 0;
 border-radius:6px;
-color:#fff;
+background-color:${props=>props.theme.colors.colorSmcard};
+color:${props=>props.theme.colors.colorwhite};
 font-size: min(max(1.6rem, 4vw), 1.6rem);
 font-family: ${props=>props.theme.fonts.secondary};
 `;

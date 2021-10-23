@@ -8,7 +8,7 @@ function Footer(){
 
     return(
         <Container id="footer">
-        <ContainerMr bkg="#fafafa">
+        <ContainerMr bgprimary>
             <Footersection>
                 <Footerwraper>
                     <FooterGrid>

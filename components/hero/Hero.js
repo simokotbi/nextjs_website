@@ -41,7 +41,7 @@ var myval;
   const { scrollYProgress } = useViewportScroll()
     return(
         <Container id="Home">
-            <ContainerMr bkg="white">
+            <ContainerMr >
 <Wrapper>
 <ColLeft> 
      <SectionTitle  >
@@ -54,7 +54,7 @@ var myval;
         Im kotbi Mohamed Im a Full stack developer with 3 years working experience.
    
         </SectionText>
-        <Link href="#Contact"><Btn MR="20px" white>Get in touch</Btn></Link>
+        <Link href="#Contact"><Btn MR="20px" primary>Get in touch</Btn></Link>
 </ColLeft>
 <ColRight style={{backgroundImage:`url(${images[current]})`,backgroundSize:'cover',transition: "all 1s ease-out"}}>
 <Image ></Image>

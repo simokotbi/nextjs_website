@@ -5,8 +5,6 @@ import {Thankscontainer,H2,P}from './ThankStyles';
 const Thanks= ()=>{
 return(
 
-        <Container>
-       
          <Thankscontainer>
          <img src="https://img.icons8.com/color/96/000000/you-singular.png"/>
     <H2>Thank you!<br/>Your email has been sent successfully</H2>
@@ -14,7 +12,7 @@ return(
     <Link href="/"  ><a><img src="https://img.icons8.com/cute-clipart/64/000000/street-view.png"/> Go Back Home</a></Link>
     </Thankscontainer>
    
-    </Container>
+
    
 );
 }
