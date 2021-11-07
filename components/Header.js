@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { FaHome ,FaUserTie,FaProjectDiagram,FaTasks} from "react-icons/fa";
 import {LOGOIMAGE} from './constants/Constants';
 import {GlobalHeader,Div1,Div2,Logo,NavLink} from './HeaderStyles';
-import styled from "styled-components";
 import { Container } from '../src/layout/LayoutStyles';
 import {motion} from 'framer-motion';
 function Header(){ 

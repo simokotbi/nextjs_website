@@ -11,7 +11,7 @@ z-index: 999;
 display: flex;
 flex-direction: column;
 align-items: center;
-background-color: ${props=>props.theme.colors.colorwhite};
+background-color: ${props=>props.theme.colors.colorwhitecard};
 justify-content:space-between;
 @media ${(props)=>props.theme.breakpoints.sm}{
     border-radius: 40px;

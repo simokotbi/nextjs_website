@@ -5,21 +5,21 @@ export const Myprojects=[
         title:"JAVA EE e-commerce website",
         image:"/images/4.jpg",
         description:"This project is an e commerce website that i made using Java enterprise edition",
-        langtitle:["JavaEE","Html","css","Bootstrap"]
+        langtitle:["#JavaEE","#Html","#css","#Bootstrap"]
     },
     {
         id:2,
         title:"wp template",
         image:"/images/5.jpg",
         description:"on this project i did work on custom wordpress theme to sharp mi skils on front-end development and also on PHP. ",
-        langtitle:["Woprdpress","Html","Css","Php","Javascript"]
+        langtitle:["#Woprdpress","#Html","#Css","#Php","#Javascript"]
     },
     {
         id:3,
         title:"Android game",
         image:"/images/6.jpg",
         description:"Simple android game Increases brain power and helps kids learning mathematics and adults of all ages.",
-        langtitle:["Java","Xml","Android studio"]
+        langtitle:["#Java","#Xml","#Android studio"]
     },
    
 ];

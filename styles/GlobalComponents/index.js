@@ -54,7 +54,7 @@ export const Card=styled.div`
   box-shadow: 3px 4px 9px rgba(80, 78, 78, 0.5);
  
   position: relative;
-  /* background-color: ${props=>props.theme.colors.colorwhite}; */
+  /* background-color: ${props=>props.theme.colors.colorwhitecard}; */
  margin: ${props=>props.MR};
 
 `;
