@@ -8,25 +8,26 @@ import {light, dark}from './themes/themes';
 import {useTheme}from '../src/useTheme';
 const Theme=({children})=>{
     const {currenttheme,switchtheme}=useTheme();
-    const [theme, setSelectedTheme] = useState(currenttheme);
+     const [themeselected, setSelectedTheme] = useState('light');
  
-   const TogleTheme=()=>{
-      if(theme==='light'){
-        switchtheme("dark")
+    
+     const TogleTheme=()=>{
+      if(currenttheme==='light'){
+        switchtheme('dark')
       }else{
         switchtheme('light')
       }
     }
-    
-     useEffect(() => {
-    setSelectedTheme(currenttheme);
-    // console.log("selectedTheme inside useeffect: "+theme+"current one :"+currenttheme)
-   }, [currenttheme,TogleTheme]);
- 
+    useEffect(()=>{
+     setSelectedTheme(currenttheme);
+    },[currenttheme])
+  console.log("selectedTheme inside useeffect: "+themeselected+"current one :"+currenttheme);
     return(
-<ThemeProvider theme={theme==="dark"?dark:light}>
+<ThemeProvider theme={themeselected==="dark"?dark:light}>
+  <Toggle toggletheme={TogleTheme} theme={themeselected}/>
+ 
     <GlobalStyles/>
-    <Toggle toggletheme={TogleTheme} theme={currenttheme}/>
+    
     {children}
 </ThemeProvider>
     );
