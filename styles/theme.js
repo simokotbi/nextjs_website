@@ -21,7 +21,7 @@ const Theme=({children})=>{
     useEffect(()=>{
      setSelectedTheme(currenttheme);
     },[currenttheme])
-  console.log("selectedTheme inside useeffect: "+themeselected+"current one :"+currenttheme);
+  
     return(
 <ThemeProvider theme={themeselected==="dark"?dark:light}>
   <Toggle toggletheme={TogleTheme} theme={themeselected}/>

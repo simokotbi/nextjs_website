@@ -1,9 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Container } from "../../src/layout/LayoutStyles";
 import {Particlesanimation}from "../animations/animation";
-import {bgi,TimeLineData} from '../constants/Constants'; 
+import {bgi,TimeLineData,resume} from '../constants/Constants'; 
 import {ContainerMr,Grid,Card}from '../../styles/GlobalComponents/index';
 import {Carouselbutton,ProjectsSection,CarouselText,CarouselTitle,Text,H2,CarouselContainer,CarouselMobileScrollNode,CarouselItem,Title}from './AboutmeStyles';
+import Link from 'next/link';
+
 
 function Aboutme(){
 const carousselRef=useRef();
@@ -55,7 +57,8 @@ window.addEventListener('resize', handleResize);
       <SmCard BGC="#2b2b30" >hallllowjsjkjsdf</SmCard>
       
   </SmCardswrapper> */}
-
+<Text> <img src="https://img.icons8.com/external-itim2101-flat-itim2101/64/000000/external-resume-project-management-itim2101-flat-itim2101-1.png"/>
+<a target="_blank" href={resume} >Download Resume</a></Text>
 <CarouselContainer ref={carousselRef} onScroll={handleScroll}>
 <>
 {TimeLineData.map((item,index)=>(

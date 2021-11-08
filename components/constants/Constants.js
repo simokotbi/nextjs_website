@@ -23,6 +23,7 @@ export const Myprojects=[
     },
    
 ];
+export const resume="/images/resume.pdf";
 export const LOGOIMAGE="/images/logo.png";
 export const images=[
     "/images/1.jpg","/images/2.jpg"
